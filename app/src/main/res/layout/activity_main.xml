@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.connect3.MainActivity">
+
+    <ImageView
+        android:id="@+id/tokenView0"
+        android:layout_width="107dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBoard"
+        app:srcCompat="@drawable/red" />
+
+    <ImageView
+        android:id="@+id/imageViewBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/board"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/spaceView0"
+        android:layout_width="105dp"
+        android:layout_height="116dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:onClick="dropToken"
+        app:layout_constraintLeft_toLeftOf="@+id/imageViewBoard"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBoard"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+</android.support.constraint.ConstraintLayout>
