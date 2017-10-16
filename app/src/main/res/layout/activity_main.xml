@@ -1,40 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.connect3.MainActivity">
 
-    <ImageView
-        android:id="@+id/tokenView0"
-        android:layout_width="107dp"
-        android:layout_height="125dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="80dp"
-        android:visibility="visible"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageViewBoard"
-        app:srcCompat="@drawable/red" />
 
-    <ImageView
-        android:id="@+id/imageViewBoard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/board"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:background="@drawable/board"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:rowCount="3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="59dp">
 
-    <ImageView
-        android:id="@+id/spaceView0"
-        android:layout_width="105dp"
-        android:layout_height="116dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="80dp"
-        android:onClick="dropToken"
-        app:layout_constraintLeft_toLeftOf="@+id/imageViewBoard"
-        app:layout_constraintTop_toTopOf="@+id/imageViewBoard"
-        app:srcCompat="@android:drawable/alert_light_frame" />
+        <ImageView
+            android:id="@+id/imageDrop0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="setToken"
+            android:tag="0" />
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imageDrop1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:onClick="setToken"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/imageDrop2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:onClick="setToken"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/imageDrop3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:onClick="setToken"
+            android:tag="3"/>
+
+        <ImageView
+            android:id="@+id/imageDrop4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:onClick="setToken"
+            android:tag="4"/>
+
+        <ImageView
+            android:id="@+id/imageDrop5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:onClick="setToken"
+            android:tag="5"/>
+
+        <ImageView
+            android:id="@+id/imageDrop6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:onClick="setToken"
+            android:tag="6"/>
+
+        <ImageView
+            android:id="@+id/imageDrop7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:onClick="setToken"
+            android:tag="7"/>
+
+        <ImageView
+            android:id="@+id/imageDrop8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:onClick="setToken"
+            android:tag="8"/>
+
+    </GridLayout>
+
+</android.widget.RelativeLayout>
