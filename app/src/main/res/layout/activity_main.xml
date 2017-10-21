@@ -103,4 +103,15 @@
 
     </GridLayout>
 
+    <Button
+        android:id="@+id/playAgainButton2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Stalemate!!            Play Again?"
+        android:textAlignment="center" />
+
 </android.widget.RelativeLayout>
