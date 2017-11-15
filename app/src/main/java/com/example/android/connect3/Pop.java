@@ -28,7 +28,7 @@ class Pop extends Activity {
         // Video view to play victory video
         VideoView videoView = (VideoView) findViewById(R.id.videoView);
 
-        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.confetti);
+        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.fireworks);
 
         // Controller to manipulate videoo
         MediaController mediaController = new MediaController(this);
